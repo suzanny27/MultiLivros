@@ -1,4 +1,4 @@
-# MultiLivros — Sistema de Gerenciamento de Biblioteca
+ 🚀 # MultiLivros — Sistema de Gerenciamento de Biblioteca
 
 **MultiLivros** é um sistema de gerenciamento de biblioteca de alta performance, projetado com uma estética **Vintage / Dark Academia** ultra imersiva para o usuário, mas utilizando as tecnologias mais modernas do desenvolvimento full stack: **React (com Tailwind CSS)** no frontend, e **Node.js (com Express) e SQLite** no backend.
 
@@ -24,38 +24,5 @@ O design foi concebido com inspiração nas bibliotecas clássicas vitorianas e 
 
 ---
 
-## 🚀 Guia de Inicialização (Terminal Ubuntu)
 
-Siga os passos exatos abaixo para instalar as dependências e rodar o projeto localmente.
 
-### Passo 1: Clonar / Acessar o Diretório do Projeto
-Abra o terminal na pasta raiz do projeto:
-```bash
-cd /home/suzanny/Multimeios
-```
-
-### Passo 2: Inicializar e Executar o Backend
-Abra um terminal dedicado para o backend:
-```bash
-cd backend
-npm install
-npm start
-```
-*O servidor Express iniciará na porta `5000` e o banco de dados `multilivros.db` será configurado e semeado automaticamente.*
-
-### Passo 3: Inicializar e Executar o Frontend
-Abra outro terminal dedicado para o frontend:
-```bash
-cd frontend
-npm install
-npm run dev
-```
-*O servidor de desenvolvimento do Vite iniciará localmente (normalmente em `http://localhost:5173`).*
-
----
-
-## 🔑 Acesso ao Painel
-Na tela de login:
-- **Administrador**: Insira qualquer e-mail (ex: `bibliotecario@multilivros.com`).
-- **Chave de Acesso**: Digite qualquer senha/chave (ex: `123456`) e clique em **Entrar no Gabinete**.
-# MultiLivros
