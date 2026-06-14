@@ -1,26 +1,92 @@
- 🚀 # MultiLivros — Sistema de Gerenciamento de Biblioteca
+# 🚀 MultiLivros — Sistema de Gerenciamento de Biblioteca
 
-**MultiLivros** é um sistema de gerenciamento de biblioteca de alta performance, projetado com uma estética **Vintage / Dark Academia** ultra imersiva para o usuário, mas utilizando as tecnologias mais modernas do desenvolvimento full stack: **React (com Tailwind CSS)** no frontend, e **Node.js (com Express) e SQLite** no backend.
+**MultiLivros** é um sistema de gerenciamento de biblioteca de alta performance. Ele une uma estética clássica **Vintage / Dark Academia** com o poder do desenvolvimento full stack moderno.
 
 ---
 
-## 🏛️ Identidade Visual e Estética
-O design foi concebido com inspiração nas bibliotecas clássicas vitorianas e no estilo literário gótico:
-- **Paleta de Cores de Luxo**:
-  - **Modo Pergaminho (Claro)**: Fundo `#F9F6F0` suave para simular papel envelhecido, com textos em marrom-café `#2C1B10`.
-  - **Modo Tabaco (Escuro)**: Fundo `#1E130C` escuro e texturizado, reduzindo o cansaço visual.
-  - **Destaque Principal**: Verde-esmeralda vitoriano `#0F2A1D` para menus persistentes.
-  - **Metais**: Dourado-velho fosco `#C5A059` para botões principais, bordas finas e detalhes tipográficos.
-- **Tipografia**: Serifas literárias clássicas (`Playfair Display`) em cabeçalhos combinadas com uma sans-serif limpa (`Inter`) para formulários e dados tabulares.
-- **Acabamentos**: Sombras suaves e profundas, divisores dourados duplos e cantos ligeiramente arredondados que imitam encadernações de couro clássicas.
-- **Capas de Livros Dinâmicas**: Se a obra não tiver imagem de capa cadastrada, o sistema gera dinamicamente uma capa clássica em CSS (azul-petróleo, vinho ou verde-musgo) com relevo e o título/autor em dourado.
+## 📌 Índice
+- [Funcionalidades](#-funcionalidades)
+- [Tecnologias Utilizadas](#-tecnologias-utilizadas)
+- [Pré-requisitos](#-pré-requisitos)
+- [Como Executar o Projeto](#-como-executar-o-projeto)
+- [Estrutura do Banco de Dados](#-estrutura-do-banco-de-dados)
+- [Licença](#-licença)
+
+---
+
+## ⚙️ Funcionalidades
+
+- **Gestão de Acervo**: Cadastro, edição e remoção de livros.
+- **Controle de Empréstimos**: Registro de saídas, devoluções e prazos.
+- **Histórico Completo**: Rastreamento de movimentações por usuário.
+- **Interface Responsiva**: Design adaptável para desktop e mobile.
+- **Estética Customizada**: Tema Dark Academia aconchegante e imersivo.
 
 ---
 
 ## 🛠️ Tecnologias Utilizadas
-- **Frontend**: React.js, Vite, Tailwind CSS, Recharts, Lucide React.
-- **Backend**: Node.js, Express, Multer (para upload de capas).
-- **Banco de Dados**: SQLite3 (gerenciado localmente via arquivo `.db` automático).
+
+### Frontend
+- **React.js**: Biblioteca base para a interface.
+- **Tailwind CSS**: Estilização rápida com classes utilitárias.
+- **Lucide React**: Pacote de ícones minimalistas.
+
+### Backend & Banco de Dados
+- **Node.js**: Ambiente de execução Javascript.
+- **Express**: Framework para construção da API REST.
+- **SQLite**: Banco de dados relacional leve e sem configuração.
+
+---
+
+## 🚀 Como Executar o Projeto
+
+### Pré-requisitos
+Você precisa ter o [Node.js](https://nodejs.org) instalado em sua máquina.
+
+### 1. Clonar o Repositório
+```bash
+git clone https://github.com
+cd multilivros
+```
+
+### 2. Configurar o Backend
+```bash
+# Entre na pasta do servidor
+cd backend
+
+# Instale as dependências
+npm install
+
+# Inicie o servidor (geralmente roda na porta 3000 ou 5000)
+npm run dev
+```
+
+### 3. Configurar o Frontend
+```bash
+# Abra um novo terminal e vá para a pasta do cliente
+cd frontend
+
+# Instale as dependências
+npm install
+
+# Inicie a aplicação web
+npm run dev
+```
+
+---
+
+## 🗃️ Estrutura do Banco de Dados (SQLite)
+
+O sistema utiliza tabelas relacionais simples para garantir a performance:
+- `livros`: id, titulo, autor, isbn, ano, quantidade.
+- `usuarios`: id, nome, email, telefone.
+- `emprestimos`: id, livro_id, usuario_id, data_emprestimo, data_devolucao, status.
+
+---
+
+## 📄 Licença
+
+Este projeto está sob a licença MIT. Consulte o arquivo [LICENSE](LICENSE) para mais detalhes.
 
 ---
 
